@@ -6,7 +6,7 @@ import Avatar from '../Img/ImgHeader/AvataHeader.svg';
 import Carrinho from '../Img/ImgHeader/MinicartHeader.svg';
 import Idiomas from '../Img/ImgHeader/IdiomasHeader.svg';
 import MenuMobi from '../Img/ImgHeader/MenuMobiHeader.svg';
-import Excluir from '../Img/ImgHeader/Excluir.svg';
+import Exit from '../Img/ImgPrateleira/Exit.svg';
 
 
 class Header extends Component {
@@ -56,7 +56,7 @@ class Header extends Component {
               }}>
               <div style={{background: "#FF9F1C", display: "flex", justifyContent:"space-between",height:60, width:"100%", marginTop:-7}}>
                 <h3 style={{ position: "relative", left:20,top:-4,color: "#FFFFFF" }}>Menu</h3>
-                <img style={{ position: "relative", left:0,top:0, paddingRight: 10 }} src={Excluir}
+                <img style={{ width:40, paddingRight: 10 }} src={Exit}
                 onClick={fechaMenu}
                   />
               </div>

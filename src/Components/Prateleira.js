@@ -5,7 +5,8 @@ import Car from '../Img/ImgPrateleira/Carrinho.svg';
 import Star from '../Img/ImgPrateleira/Star.svg';
 import TenisPequeno from '../Img/ImgPrateleira/TenisPequeno.png';
 import DescontoMobi from '../Img/ImgPrateleira/DescontoMobi.svg';
-import Excluir from '../Img/ImgHeader/Excluir.svg';
+import Exit from '../Img/ImgPrateleira/Exit.svg';
+import Delete from '../Img/ImgPrateleira/Delete.svg'
 
 import swal from 'sweetalert'
 
@@ -160,7 +161,7 @@ class Prateleira extends Component {
                 style={{ display: this.state.display,  }}>
                     <div style={{background: "#FF9F1C", display: "flex", justifyContent:"space-between",height:60, width:"100%", marginTop:-7}}>
                         <h2 style={{ position: "relative", left:20,top:-4,color: "#FFFFFF" }}>Carrinho</h2>
-                        <img src={Excluir} onClick={fechaCarrinho} style={{ }}/>
+                        <img src={Exit} onClick={fechaCarrinho} style={{ width: 40 }}/>
                         
                     </div>
                     {this.state.carrinho.map((item)=>{
@@ -169,7 +170,7 @@ class Prateleira extends Component {
                                 <img src={item.imagem}/>
                                 <p>{item.nome}</p>
                                 <p>{item.precoNovo}</p>
-                                <p onClick={()=> this.excluir(item)}>X</p>
+                                <img src={Delete} style={{width: 20}} onClick={()=> this.excluir(item)}/>
                             </div>
                         );
                     })}
