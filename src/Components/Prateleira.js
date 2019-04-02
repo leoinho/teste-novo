@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import '../CSS/Prateleira.css';
-import Tenis from '../Img/ImgPrateleira/Tenis.png';
 import Car from '../Img/ImgPrateleira/Carrinho.svg';
 import Star from '../Img/ImgPrateleira/Star.svg';
 import TenisPequeno from '../Img/ImgPrateleira/TenisPequeno.png';
 import DescontoMobi from '../Img/ImgPrateleira/DescontoMobi.svg';
 import Exit from '../Img/ImgPrateleira/Exit.svg';
-import Delete from '../Img/ImgPrateleira/Delete.svg'
+import Delete from '../Img/ImgPrateleira/Delete.svg';
+import Bone from '../Img/ImgPrateleira/bone.png';
+import Oculos from '../Img/ImgPrateleira/oculos.png';
+import TenisNike from '../Img/ImgPrateleira/TenisNike.png';
 
 import swal from 'sweetalert'
 
@@ -20,15 +22,15 @@ class Prateleira extends Component {
             carrinho: [],
             produtosMobi: [
                 {   
-                    nome: "Tenis couro Puma R698 Q4 V1",   
+                    nome: "Tenis Nike",   
                     precoAntigo: 'de R$ 299,00',
                     precoNovo: '299,00',
                     parcela: 'ou em 3x de R$ 133,00',
                     desconto: '',
-                    imagem: TenisPequeno
+                    imagem: TenisNike
                 },
                 {     
-                    nome: "Tenis couro Puma R698 Q4 V2",              
+                    nome: "Boné preto",              
                     precoAntigo: 'de R$ 299,00',
                     precoNovo: '399,00',
                     parcela: 'ou em 3x de R$ 133,00',
@@ -36,20 +38,20 @@ class Prateleira extends Component {
                             <path d="M82 72.0408L0.639969 1.52588e-05L82 1.52588e-05L82 72.0408Z" fill="#FF9F1C"/>
                             <path d="M44.175 22.2491C44.175 22.9059 44.2556 23.5051 44.4169 24.0467C44.5783 24.5768 44.8087 25.032 45.1083 25.4122C45.4195 25.781 45.794 26.0691 46.2319 26.2765C46.6697 26.4839 47.1652 26.5876 47.7184 26.5876C48.2599 26.5876 48.7497 26.4839 49.1876 26.2765C49.6255 26.0691 49.9942 25.781 50.2938 25.4122C50.6049 25.032 50.8412 24.5768 51.0025 24.0467C51.1638 23.5051 51.2445 22.9059 51.2445 22.2491C51.2445 21.5923 51.1638 20.9988 51.0025 20.4687C50.8412 19.9272 50.6049 19.472 50.2938 19.1032C49.9942 18.723 49.6255 18.4291 49.1876 18.2217C48.7497 18.0143 48.2599 17.9106 47.7184 17.9106C47.1652 17.9106 46.6697 18.0143 46.2319 18.2217C45.794 18.4291 45.4195 18.723 45.1083 19.1032C44.8087 19.4835 44.5783 19.9387 44.4169 20.4687C44.2556 20.9988 44.175 21.5923 44.175 22.2491ZM53.5261 22.2491C53.5261 23.2747 53.3705 24.1792 53.0594 24.9628C52.7598 25.7464 52.3449 26.4032 51.8149 26.9333C51.2963 27.4518 50.6856 27.8436 49.9827 28.1087C49.2798 28.3737 48.5307 28.5062 47.7356 28.5062C46.9405 28.5062 46.1858 28.3737 45.4713 28.1087C44.7684 27.8436 44.1519 27.4518 43.6218 26.9333C43.1033 26.4032 42.6885 25.7464 42.3773 24.9628C42.0662 24.1792 41.9106 23.2747 41.9106 22.2491C41.9106 21.2235 42.0662 20.3247 42.3773 19.5526C42.6885 18.7691 43.109 18.1122 43.6391 17.5822C44.1807 17.0521 44.803 16.6545 45.5059 16.3895C46.2088 16.1245 46.9521 15.992 47.7356 15.992C48.5192 15.992 49.2625 16.1245 49.9654 16.3895C50.6683 16.6545 51.279 17.0521 51.7976 17.5822C52.3277 18.1122 52.7483 18.7691 53.0594 19.5526C53.3705 20.3247 53.5261 21.2235 53.5261 22.2491ZM55.9153 28.2469V16.2685H63.4861V18.118H58.0932V21.1774H62.8811V23.0269H58.0932V28.2469H55.9153ZM65.4355 28.2469V16.2685H73.0063V18.118H67.6134V21.1774H72.4013V23.0269H67.6134V28.2469H65.4355Z" fill="white"/>
                             </svg>,
-                    imagem: TenisPequeno             
+                    imagem: Bone             
                 },
             ],
             produtos: [
                 {   
-                    nome: "Tenis couro Puma R698 Q4 V1",   
+                    nome: "Óculos ",   
                     precoAntigo: 'de R$ 299,00',
                     precoNovo: '299,00',
                     parcela: 'ou em 3x de R$ 133,00',
                     desconto: '',
-                    imagem: TenisPequeno
+                    imagem: Oculos
                 },
                 {     
-                    nome: "Tenis couro Puma R698 Q4 V2",              
+                    nome: "Boné preto",              
                     precoAntigo: 'de R$ 299,00',
                     precoNovo: '399,00',
                     parcela: 'ou em 3x de R$ 133,00',
@@ -57,7 +59,7 @@ class Prateleira extends Component {
                             <path d="M82 72.0408L0.639969 1.52588e-05L82 1.52588e-05L82 72.0408Z" fill="#FF9F1C"/>
                             <path d="M44.175 22.2491C44.175 22.9059 44.2556 23.5051 44.4169 24.0467C44.5783 24.5768 44.8087 25.032 45.1083 25.4122C45.4195 25.781 45.794 26.0691 46.2319 26.2765C46.6697 26.4839 47.1652 26.5876 47.7184 26.5876C48.2599 26.5876 48.7497 26.4839 49.1876 26.2765C49.6255 26.0691 49.9942 25.781 50.2938 25.4122C50.6049 25.032 50.8412 24.5768 51.0025 24.0467C51.1638 23.5051 51.2445 22.9059 51.2445 22.2491C51.2445 21.5923 51.1638 20.9988 51.0025 20.4687C50.8412 19.9272 50.6049 19.472 50.2938 19.1032C49.9942 18.723 49.6255 18.4291 49.1876 18.2217C48.7497 18.0143 48.2599 17.9106 47.7184 17.9106C47.1652 17.9106 46.6697 18.0143 46.2319 18.2217C45.794 18.4291 45.4195 18.723 45.1083 19.1032C44.8087 19.4835 44.5783 19.9387 44.4169 20.4687C44.2556 20.9988 44.175 21.5923 44.175 22.2491ZM53.5261 22.2491C53.5261 23.2747 53.3705 24.1792 53.0594 24.9628C52.7598 25.7464 52.3449 26.4032 51.8149 26.9333C51.2963 27.4518 50.6856 27.8436 49.9827 28.1087C49.2798 28.3737 48.5307 28.5062 47.7356 28.5062C46.9405 28.5062 46.1858 28.3737 45.4713 28.1087C44.7684 27.8436 44.1519 27.4518 43.6218 26.9333C43.1033 26.4032 42.6885 25.7464 42.3773 24.9628C42.0662 24.1792 41.9106 23.2747 41.9106 22.2491C41.9106 21.2235 42.0662 20.3247 42.3773 19.5526C42.6885 18.7691 43.109 18.1122 43.6391 17.5822C44.1807 17.0521 44.803 16.6545 45.5059 16.3895C46.2088 16.1245 46.9521 15.992 47.7356 15.992C48.5192 15.992 49.2625 16.1245 49.9654 16.3895C50.6683 16.6545 51.279 17.0521 51.7976 17.5822C52.3277 18.1122 52.7483 18.7691 53.0594 19.5526C53.3705 20.3247 53.5261 21.2235 53.5261 22.2491ZM55.9153 28.2469V16.2685H63.4861V18.118H58.0932V21.1774H62.8811V23.0269H58.0932V28.2469H55.9153ZM65.4355 28.2469V16.2685H73.0063V18.118H67.6134V21.1774H72.4013V23.0269H67.6134V28.2469H65.4355Z" fill="white"/>
                             </svg>,
-                    imagem: TenisPequeno             
+                    imagem: Bone            
                 },
                 {
                     nome: "Tenis couro Puma R698 Q4 V3",
@@ -68,12 +70,12 @@ class Prateleira extends Component {
                     imagem: TenisPequeno
                 },
                 {
-                    nome: "Tenis couro Puma R698 Q4 V4",
+                    nome: "Tenis Nike",
                     precoAntigo: 'de R$ 299,00',
                     precoNovo: '599,00',
                     parcela: 'ou em 3x de R$ 133,00',
                     desconto:'',
-                    imagem: TenisPequeno
+                    imagem: TenisNike
                 },
             ]
         }
@@ -91,7 +93,7 @@ class Prateleira extends Component {
         this.setState({ total: tot })
         swal({
             icon: "error",
-            text: "O produto foi excluido do carrinho!",
+            text: "O produto "+item.nome+" foi excluido do carrinho!",
           });
 
     }
@@ -108,7 +110,7 @@ class Prateleira extends Component {
         }
         swal({
             icon: "success",
-            text: "O produto foi adicionado ao carrinho!",
+            text: "O produto "+produto.nome+" foi adicionado ao carrinho!",
           });
       }
   render() {
@@ -170,7 +172,7 @@ class Prateleira extends Component {
                                 <img src={item.imagem}/>
                                 <p>{item.nome}</p>
                                 <p>{item.precoNovo}</p>
-                                <img src={Delete} style={{width: 20}} onClick={()=> this.excluir(item)}/>
+                                <img src={Delete} style={{width: 20,position:'absolute', right:20}} onClick={()=> this.excluir(item)}/>
                             </div>
                         );
                     })}
@@ -203,7 +205,7 @@ class Prateleira extends Component {
                                         
                                         <div  className="produto" >
                                             <div className="desconto">{ prod.desconto }</div>
-                                            <img src={Tenis} className="tenis"/>
+                                            <img src={prod.imagem} className="tenis"/>
                                             <p className="nomeProduto">{ prod.nome }</p>
                                             <img src={Star} className=""/>
                                             <p className="precoAntigo">{prod.precoAntigo}</p>
@@ -227,7 +229,7 @@ class Prateleira extends Component {
                                         
                                         <div  className="produtoMobi" >
                                             <div className="desconto">{ prod.desconto }</div>
-                                            <img src={TenisPequeno} className="tenis"/>
+                                            <img src={prod.imagem} className="tenis"/>
                                             <p className="nomeProduto">{ prod.nome }</p>
                                             <img src={Star} className=""/>
                                             <p className="precoAntigo">{prod.precoAntigo}</p>

@@ -54,6 +54,10 @@
 .produto:hover .btn{
     background: #2EC4B6;
 }
+.tenis{
+    width: 125px;
+    height: 130px;
+}
 .nomeProduto{
     font-family: Ubuntu;
     font-style: normal;
@@ -258,5 +262,9 @@
         padding-right: 18px;
         font-size: 15.309px;
         padding-top: 5px;
+    }
+    .tenis{
+        width: 125px;
+        height: 130px;
     }
 }
